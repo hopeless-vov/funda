@@ -20,6 +20,10 @@ If I were a user, I would like to see its location. I was working with Google Ma
 # 5. Nuxt.js
 Such sites must work with the SSR in order for users to see our ads.
 
+# 6. Optimization of pictures and all other media content
+
+# 7. SEO optimization
+
 ## Project setup
 ```
 npm install
