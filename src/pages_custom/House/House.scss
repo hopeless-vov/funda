@@ -1,0 +1,19 @@
+.house {
+  position: relative;
+  display: grid;
+  .image-gallery {
+    display: none;
+  }
+}
+@media (min-width: 885px) {
+  .house {
+    margin: 30px;
+    grid-template-columns: 1fr 1fr;
+    .image-carousel {
+      display: none;
+    }
+    .image-gallery {
+      display: grid;
+    }
+  }
+}

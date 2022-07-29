@@ -1,0 +1,55 @@
+.image-carousel {
+  .image-wrapper {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+    padding: 15px 0;
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+    .image-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      button {
+        background-color: #ffffffde;
+        height: 35px;
+        &:first-child {
+          border-radius: 0 4px 4px 0;
+        }
+        &:last-child {
+          border-radius: 4px 0 0 4px;
+        }
+      }
+    }
+    .image-share {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .v-icon {
+        cursor: pointer;
+        color: #ffffffde;
+        font-size: 30px;
+        text-shadow: 1px 1px #1c1515
+      }
+    }
+    .image-page-number {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 24px;
+      padding: 2px 8px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #ffffff;
+    }
+  }
+}

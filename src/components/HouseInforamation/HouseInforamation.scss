@@ -1,0 +1,48 @@
+.house-information {
+  display: grid;
+  height: 100%;
+  .short-info {
+    display: grid;
+    justify-content: start;
+    padding: 15px;
+    justify-content: normal;
+    align-content: start;
+    .price {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    .location {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 15px;
+      margin-top: 15px;
+      button {
+        cursor: pointer;
+        padding: 15px 10px;
+        border-radius: 4px;
+        &:first-child {
+          background-color: #023047;
+          color: #ffffff;
+        }
+        &:last-child {
+          color: #023047;
+          border: 1px solid #023047;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 885px) {
+  .house-information {
+    padding-left: 15px;
+    overflow: hidden;
+  }
+}

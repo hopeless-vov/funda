@@ -1,0 +1,107 @@
+.full-info {
+  display: grid;
+  .navigation-items {
+    display: flex;
+    padding: 0px 10px;
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    gap: 30px;
+    justify-content: space-between;
+    position: sticky;
+    padding: 5px 0px;
+    background: white;
+    top: 0;
+    z-index: 1;
+    .navigation-item {
+      padding: 15px 10px;
+      border-radius: 4px;
+      a {
+        text-decoration: none;
+        outline: none;
+        cursor: pointer;
+        z-index: 100;
+        color: #023047;
+      }
+      &:hover {
+        background: #023047;
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .content {
+    display: grid;
+    gap: 20px;
+    .content-items {
+      padding: 30px 15px;
+      display: grid;
+      gap: 30px;
+      .title-info {
+        margin-bottom: 15px;
+        h2 {
+          color: #023047;
+          font-size: 24px;
+        }
+        .description {
+          font-size: 18px;
+        }
+      }
+      .content-item {
+        position: relative;
+        display: grid;
+        gap: 15px;
+        border-bottom: 3px solid #023047;
+        padding-bottom: 15px;
+        .scroll {
+          position: absolute;
+          top: -80px;
+        }
+        button {
+          padding: 15px 10px;
+          border-radius: 4px;
+          color: #023047;
+          border: 1px solid #023047;
+        }
+        .element {
+          color: #023047;
+          padding-bottom: 5px;
+          span {
+            font-size: 16px;
+          }
+          .title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+          }
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+      .overview {
+        .long-description {
+          overflow: hidden;
+        }
+      }
+      .rental {
+        color: rgb(42, 42, 51);
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+  }
+}
+
+@media (min-width: 885px) {
+  .full-info {
+    overflow-y: scroll;
+    padding-right: 15px;
+    scroll-behavior: smooth;
+    .navigation-items {
+      height: 60px;
+    }
+  }
+}
