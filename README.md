@@ -1,6 +1,7 @@
 # funda-test
 
 The request was blocked by Cors. I used a chrome dependency to avoid this.
+It took me about 10 hours. If I had a ready-made design, I would have spent less time.
 
 # What i would like to add
 
